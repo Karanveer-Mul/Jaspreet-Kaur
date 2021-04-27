@@ -1,0 +1,40 @@
+:root {
+    --fg-color: rgba(255,255,255, 0.9);
+    --bg-color: #e5e5e5;
+    --highlight-primary: #c5c5c5;
+
+    --nav-height: 3rem;
+}
+
+html {
+    font-size: 18px;
+    font-weight: 100;
+    font-family: "Montserrat", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: var(--nav-height);
+    min-height: 100vh;
+
+    background: var(--bg-color);
+    color: var(--fg-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--nav-height);
+    font-size: 1.5rem;
+
+    box-shadow: -2px 2px 8px 0px rgba(0, 0, 0, 0, 0.8);
+
+    border-bottom: 1px solid var(--highlight-primary);
+}
