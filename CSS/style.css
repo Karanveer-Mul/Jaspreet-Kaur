@@ -11,6 +11,8 @@
 
     --transition: 250ms ease-out;
     --transition-long: 500ms ease-out;
+
+    --max-width: 1440px;
 }
 
 html {
@@ -31,6 +33,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.container {
+    min-height: 75vh;
+    width: 100%;
+    max-width: var(--max-width);
 }
 
 header {
@@ -88,6 +96,36 @@ header a:hover {
     display: none;
     cursor: pointer;
 } 
+
+#hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#hero-job-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 18px 0 18px;
+}
+
+#JK {
+    position: relative;
+    top: -2rem;
+    left: -1rem;
+    color:white;
+    font-size: 6em;
+    font-weight: 600;
+    
+}
+
+#job-title {
+    position: relative;
+    top: -5rem;
+    font-size: 3em;
+    font-weight: 700;
+}
 
 @media screen and (max-width: 768px) {
     
